@@ -32,8 +32,11 @@ Snap.load("man.svg", function (f) {
 		});
 	}
 
-	window.onload = function letsStart() {
+	$(window).load(function(){
 		moveLeft()
-	}
+	})
+	// window.onload = function letsStart() {
+	// 	moveLeft()
+	// }
 
 });
