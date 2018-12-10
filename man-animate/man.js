@@ -1,17 +1,22 @@
-var s = Snap(1000, 705),
-		wheat = {fill: '#f4e9b0'},
-		marsala = {fill: '#a8575e'};
+var s = Snap(500.92, 552.42)
 
-Snap.load("man.svg", function (f) {
-	var man = f.selectAll('path, rect, circle, ellipse');
-			s.append(man);
-
-	s.selectAll('#Ellipse_4, #Rectangle_2, #Ellipse_3, #Path_7').attr(wheat);
-	s.selectAll('#Path_12, #Path_9, #Path_8, #Path_10, #Path_11').attr(marsala);
+Snap.load("svg-man-1.svg", function (svg) {
+	s.append(svg);
 
 	var leftArm = s.select('#Path_12'),
 			leftWrist = s.select('#Rectangle_2'),
-			leftHand = s.select('#Ellipse_4');
+			leftHand = s.select('#Ellipse_4').drag();
+
+	function test1() {
+		leftWrist.animate({transform: "matrix(1,0,0.2867,1,-115,-1)"}, 300);
+		leftArm.animate({transform: "matrix(1,0,0.2867,1,-115,-1)"}, 300);
+		leftHand.animate({transform: "matrix(0.9613,-0.2756,0.2756,0.9613,-113.1,10.7545)"}, 300, function(){test2()});
+	};
+	function test2() {
+		leftWrist.animate({transform: "skewY(0)"}, 300);
+		leftArm.animate({transform: "skewY(0)"}, 300);
+		leftHand.animate({transform: "rotate(0)"}, 300, function(){test1()});
+	};
 
 	function moveLeft() {
 		leftHand.animate({transform: 'matrix(0.1219,0.9925,-0.9925,0.1219,518,71)'}, 0);
@@ -32,11 +37,8 @@ Snap.load("man.svg", function (f) {
 		});
 	}
 
-	$(window).load(function(){
-		moveLeft()
-	})
-	// window.onload = function letsStart() {
-	// 	moveLeft()
-	// }
+	window.onload = function letsStart() {
+		test1();
+	}
 
 });
