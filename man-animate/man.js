@@ -18,8 +18,8 @@ Snap.load("svg-man-1.svg", function (svg) {
 		leftHand.animate({transform: "rotate(0)"}, 300, function(){moveLeft()});
 	}
 
-	window.onload = function letsStart() {
+	window.onload = function () {
 		moveLeft();
-	}
+	}();
 
 });
