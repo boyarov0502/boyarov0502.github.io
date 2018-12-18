@@ -1,0 +1,108 @@
+@import "default"
+
+.header
+	height: 60px
+	width: 100%
+	&__logo
+		background: #333333
+		float: left
+		height: 100%
+		padding: 10px 34px
+		text-align: right
+		width: 400px
+	&__nav
+		float: left
+
+.nav
+	&__jar
+		display: table
+		margin: 0
+		padding: 0
+	&__item
+		float: left
+		list-style-type: none
+	&__link
+		color: #000000
+		display: block
+		// padding: 20px 18px
+		padding: 20px 72px
+		text-decoration: none
+		&:hover
+			background: #FF5B00
+			color: #FFFFFF
+
+.slider
+	&__slide
+		background: #666666
+		text-align: center
+		img
+			margin: 160px auto 0
+	&__link
+		background: #FF5B00
+		border-radius: 16px
+		color: #FFFFFF
+		display: table
+		font-size: 24px
+		margin: 82px auto 88px
+		padding: 2px 144px 8px
+		text-decoration: none
+		&:hover
+			opacity: 0.75
+
+.intro
+	margin: 84px auto
+	width: 1060px
+
+.service
+	border-bottom: 1px solid #FF5B00
+	border-top: 1px solid #FF5B00
+	margin: 0 auto 86px
+	padding: 22px 0
+	text-align: center
+	&__topic
+		margin-bottom: 22px
+	&__offer
+		margin: 0 auto
+		width: 1170px
+
+.topic
+	color: #333333
+	text-transform: uppercase
+
+.offer
+	&__link
+		color: #F77A2A
+		display: inline
+		font-size: 18px
+		font-weight: 600
+		padding-right: 10px
+		position: relative
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+		&:after
+			content: "I"
+			position: absolute
+			right: 0
+		&:last-child
+			&:after
+				display: none
+
+.advantage
+	text-align: center
+	&__jar
+		display: flex
+		justify-content: space-between
+		margin: 77px auto
+		width: 1090px
+	&__element
+		width: 250px
+		&:first-child
+			text-align: left
+		&:last-child
+			text-align: right
+	&__image
+		margin-bottom: 16px
+	&__text
+		color: #F77A2A
+		font-weight: 600

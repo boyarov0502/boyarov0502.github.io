@@ -1,0 +1,311 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+[hidden] {
+  display: none;
+}
+
+a:active, a:hover, a:focus {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+p {
+  margin: 0;
+}
+
+menu, ol, ul {
+  margin: 16px 0;
+  padding: 0 0 0 40px;
+}
+
+ul {
+  list-style-type: square;
+}
+
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+li > ul, li > ol {
+  margin: 0;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+  order: 0;
+  vertical-align: middle;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+form {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  min-width: inherit;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  max-width: 100%;
+  vertical-align: baseline;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  padding: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  padding-right: 2px;
+  width: 270px;
+}
+
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+-webkit-input-placeholder {
+  color: #7d7b6d;
+}
+
+-moz-placeholder {
+  color: #7d7b6d;
+}
+
+-moz-placeholder {
+  color: #7d7b6d;
+}
+
+-ms-input-placeholder {
+  color: #7d7b6d;
+}
+
+embed, iframe, object, video {
+  max-width: 100%;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  font-size: 17px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.header {
+  height: 60px;
+  width: 100%;
+}
+
+.header__logo {
+  background: #333333;
+  float: left;
+  height: 100%;
+  padding: 10px 34px;
+  text-align: right;
+  width: 400px;
+}
+
+.header__nav {
+  float: left;
+}
+
+.nav__jar {
+  display: table;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  float: left;
+  list-style-type: none;
+}
+
+.nav__link {
+  color: #000000;
+  display: block;
+  padding: 20px 72px;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  background: #FF5B00;
+  color: #FFFFFF;
+}
+
+.slider__slide {
+  background: #666666;
+  text-align: center;
+}
+
+.slider__slide img {
+  margin: 160px auto 0;
+}
+
+.slider__link {
+  background: #FF5B00;
+  border-radius: 16px;
+  color: #FFFFFF;
+  display: table;
+  font-size: 24px;
+  margin: 82px auto 88px;
+  padding: 2px 144px 8px;
+  text-decoration: none;
+}
+
+.slider__link:hover {
+  opacity: 0.75;
+}
+
+.intro {
+  margin: 84px auto;
+  width: 1060px;
+}
+
+.service {
+  border-bottom: 1px solid #FF5B00;
+  border-top: 1px solid #FF5B00;
+  margin: 0 auto 86px;
+  padding: 22px 0;
+  text-align: center;
+}
+
+.service__topic {
+  margin-bottom: 22px;
+}
+
+.service__offer {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.topic {
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.offer__link {
+  color: #F77A2A;
+  display: inline;
+  font-size: 18px;
+  font-weight: 600;
+  padding-right: 10px;
+  position: relative;
+  text-decoration: none;
+}
+
+.offer__link:hover {
+  text-decoration: underline;
+}
+
+.offer__link:after {
+  content: "I";
+  position: absolute;
+  right: 0;
+}
+
+.offer__link:last-child:after {
+  display: none;
+}
+
+.advantage {
+  text-align: center;
+}
+
+.advantage__jar {
+  display: flex;
+  justify-content: space-between;
+  margin: 77px auto;
+  width: 1090px;
+}
+
+.advantage__element {
+  width: 250px;
+}
+
+.advantage__element:first-child {
+  text-align: left;
+}
+
+.advantage__element:last-child {
+  text-align: right;
+}
+
+.advantage__image {
+  margin-bottom: 16px;
+}
+
+.advantage__text {
+  color: #F77A2A;
+  font-weight: 600;
+}
