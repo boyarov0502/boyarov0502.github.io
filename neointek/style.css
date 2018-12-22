@@ -1,4 +1,5 @@
 @import url("fonts/fonts.css");
+@import url("fonts/icons.css");
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -205,7 +206,8 @@ body {
 .nav__link {
   color: #000000;
   display: block;
-  padding: 20px 72px;
+  margin: 0 52px;
+  padding: 20px;
   text-decoration: none;
 }
 
@@ -220,7 +222,7 @@ body {
 }
 
 .slider__slide {
-  background: #666666;
+  background: url("images/background.png") repeat;
   text-align: center;
 }
 
@@ -274,6 +276,7 @@ body {
   color: #333333;
   font-family: "PlexSans";
   font-size: 48px;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -285,10 +288,6 @@ body {
   padding-right: 10px;
   position: relative;
   text-decoration: none;
-}
-
-.offer__link:hover {
-  text-decoration: underline;
 }
 
 .offer__link:after {
@@ -334,9 +333,13 @@ body {
   font-weight: 600;
 }
 
+#brand {
+  border-bottom: 1px solid #FF5B00;
+}
+
 .partner {
   display: block;
-  margin: 0 auto 100px;
+  margin: 0 auto 50px;
   padding-top: 59px;
   position: relative;
   text-align: center;
@@ -367,6 +370,7 @@ body {
 }
 
 .popup {
+  background: rgba(0, 0, 0, 0.7);
   display: none;
   height: 100%;
   padding: 0;
@@ -387,7 +391,6 @@ body {
 }
 
 .popup__image {
-  background: #999999;
   display: table;
   float: left;
   height: 100%;
@@ -402,7 +405,6 @@ body {
 }
 
 .popup__text {
-  background: #666666;
   color: #FFFFFF;
   float: left;
   font-size: 20px;
@@ -410,4 +412,266 @@ body {
   padding: 60px 40px 40px 40px;
   text-align: left;
   width: 73.6%;
+}
+
+.dealer {
+  margin: 0 auto 130px;
+  padding-top: 50px;
+  width: 786px;
+}
+
+.dealer__topic {
+  margin-bottom: 12px;
+}
+
+.dealer__jar {
+  background: #F77A2A;
+  padding: 22px;
+}
+
+.dealer__form {
+  margin: 0 auto;
+  width: 532px;
+}
+
+.form__text {
+  color: #FFFFFF;
+  font-size: 13px;
+  margin-bottom: 16px;
+  padding: 0 6px;
+}
+
+.form__column {
+  float: left;
+  width: 50%;
+}
+
+.form__row {
+  clear: both;
+}
+
+.form__error {
+  clear: both;
+  color: #000000;
+  font-size: 14px;
+  padding: 2px 6px 10px;
+  text-decoration: underline;
+}
+
+.form__input {
+  border: 1px solid #ffffff;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  line-height: 54px;
+  margin: 10px 6px;
+  padding: 0 10px;
+  width: 254px;
+}
+
+.form__input:placeholder {
+  color: #666666;
+}
+
+.form__input.error {
+  border: 1px solid #000000;
+}
+
+.form__textarea {
+  border: 1px solid #ffffff;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  height: 209px;
+  margin: 10px 6px;
+  max-height: 209px;
+  max-width: 254px;
+  min-height: 209px;
+  min-width: 254px;
+  padding: 10px;
+  width: 254px;
+}
+
+.form__textarea:placeholder {
+  color: #666666;
+}
+
+.form__textarea.error {
+  border: 1px solid #000000;
+}
+
+.form__button {
+  float: right;
+  margin-right: 7px;
+  width: 160px;
+}
+
+.switcher_checkbox {
+  display: inline-table;
+  height: 30px;
+  position: relative;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.switcher_checkbox::before {
+  color: #ffffff;
+  content: "\e915";
+  font-family: 'monomoloco_ICON';
+  font-size: 7px;
+  font-weight: 700;
+  left: 9px;
+  opacity: 0;
+  position: absolute;
+  top: 6px;
+  transition: opacity 0.3s;
+  z-index: 0;
+}
+
+.switcher_checkbox .switcher__check {
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 1px;
+  cursor: pointer;
+  display: block;
+  height: 15px;
+  left: 6px;
+  position: absolute;
+  top: 2px;
+  transition: all 0.3s;
+  width: 15px;
+  z-index: 1;
+}
+
+.switcher_checkbox .switcher__text {
+  display: inline-block;
+  padding-left: 26px;
+  margin-left: 10px;
+  vertical-align: sub;
+}
+
+.switcher_checkbox input[type="checkbox"] {
+  display: contents;
+  float: left;
+  visibility: hidden;
+  width: 0;
+}
+
+.switcher_checkbox.checked .switcher__check {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.switcher_checkbox.checked::before {
+  opacity: 1;
+}
+
+.switcher_checkbox:hover {
+  cursor: pointer;
+}
+
+.switcher_checkbox:hover .switcher__check {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.button {
+  background: transparent;
+  border: 0.147em solid grey;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  padding: 0.553em 0.441em 0.733em;
+  text-align: center;
+  user-select: none;
+}
+
+.button_color_white {
+  border: 0.147em solid #ffffff;
+  border-radius: 0.294em;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.button_color_white:hover {
+  border: 0.147em solid rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.button_color_white:active, .button_color_white.disable {
+  border: 0.147em solid rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.error + div {
+  color: #ffffff;
+  font-size: 11px;
+  padding: 0 6px;
+}
+
+.contact {
+  padding-top: 60px;
+  position: relative;
+  width: 100%;
+}
+
+.contact__info {
+  background: #666666;
+  color: #ffffff;
+  height: 480px;
+  left: 540px;
+  margin: auto;
+  padding: 15px 25px;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 400px;
+}
+
+.contact__topic {
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.map {
+  height: 490px;
+  width: 100%;
+}
+
+.map > ymaps {
+  width: 100% !important;
+}
+
+.map > ymaps > ymaps {
+  width: 100% !important;
+}
+
+.map > ymaps > ymaps > ymaps > ymaps:first-child {
+  background: rgba(247, 122, 42, 0.4);
+}
+
+.map .ymaps-2-1-72-places-pane {
+  z-index: 2501 !important;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  display: none;
+}
+
+.scroll-to-top span {
+  background: #ffffff;
+  border: 2px solid #F77A2A;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  color: #F77A2A;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 200ms;
+}
+
+.scroll-to-top span:hover {
+  border: 2px solid blue;
+  color: blue;
 }
