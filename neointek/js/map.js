@@ -15,7 +15,7 @@ function init(){
     }, {
         iconLayout: 'default#image',
         iconImageHref: 'images/market.svg',
-        iconImageSize: [50, 54],
+        iconImageSize: [39, 54],
         iconImageOffset: [-25, -57],
     });
 
@@ -33,5 +33,7 @@ function init(){
       }
     })
 
-    myMap.geoObjects.add(myPlacemark);
+		myMap.geoObjects.add(myPlacemark);
+
+		myMap.behaviors.disable('scrollZoom');
 }
