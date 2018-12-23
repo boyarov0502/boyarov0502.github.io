@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	function loadSvg() {
-		$('img[src$=".svg"]').each(function() {
+		$('#brand img[src$=".svg"]').each(function() {
 			var $img = jQuery(this);
 			var imgURL = $img.attr('src');
 			var attributes = $img.prop("attributes");
@@ -89,7 +89,7 @@ $(document).ready(function() {
 			}
 		});
 
-		$('.scroll-to-top').click(function () {
+		$('.scroll-to-top, .logo__image').click(function () {
 			$('html, body').stop().animate({
 				scrollTop: 0
 			}, 600);

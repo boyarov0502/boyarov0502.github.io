@@ -21,6 +21,10 @@
 	&__nav
 		float: left
 
+.logo
+	&__image
+		cursor: pointer
+
 .nav
 	&__jar
 		display: table
@@ -363,13 +367,36 @@
 	& > ymaps > ymaps
 		width:100% !important
 	& > ymaps > ymaps > ymaps > ymaps:first-child
-		background: rgba(255, 100, 0, 0.4)
+		background: rgba(255, 100, 0, 0.1)
 	.ymaps-2-1-72-places-pane
 		z-index: 2501 !important
 	.ymaps-2-1-72-copyright__wrap
 		width: 203px
 	.ymaps-2-1-72-image
 		background-size: 100% 100%
+
+.social
+	height: 180px
+	left: 0
+	position: fixed
+	top: 30%
+	width: 60px
+	z-index: 99
+	&__item
+		display: block
+		height: 60px
+		line-height: 60px
+		text-align: center
+		transition: opacity 200ms
+		width: 60px
+		&:hover
+			opacity: 0.7
+	&_vk
+		background: #F77A2A
+	&_twitter
+		background: #FF5B00
+	&_facebook
+		background: #FF4500
 
 .scroll-to-top
 	position: fixed
