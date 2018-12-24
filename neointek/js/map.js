@@ -6,8 +6,8 @@ function init(){
     myMap = new ymaps.Map("map", {
         center: [55.61352599, 37.72574151],
         zoom: 16,
-				controls: ['smallMapDefaultSet'],
-				type: 'yandex#hybrid'
+				controls: ['smallMapDefaultSet']
+				// type: 'yandex#hybrid'
     });
 
     myPlacemark = new ymaps.Placemark([55.61357457, 37.71915400], {
