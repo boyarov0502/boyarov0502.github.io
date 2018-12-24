@@ -7,16 +7,68 @@
 	<title>НЕОИНТЕК</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="slick/slick.css">
-	<link rel="stylesheet" href="slick/slick-theme.css">
+	<!-- <link rel="stylesheet" href="slick/slick-theme.css"> -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
+	<!-- Preloader part -->
+	<div class="preloader">
+		<div class="os-spinner">
+			<div class="rect1"></div>
+			<div class="rect2"></div>
+			<div class="rect3"></div>
+			<div class="rect4"></div>
+			<div class="rect5"></div>
+		</div>
+	</div>
+	<style>
+		.preloader {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 999999;
+			width: 100%;
+			height: 100%;
+			background: #333333;
+		}
+		.os-spinner {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+    	margin: auto;
+			width: 40px;
+			height: 40px;
+			background-color: #F77A2A;
+			-webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+			animation: sk-rotateplane 1.2s infinite ease-in-out;
+		}
+		@keyframes sk-rotateplane {
+			0% {
+				transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+				-webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+			}
+			50% {
+				transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+				-webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+			}
+			100% {
+				transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+				-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+			}
+		}
+	</style>
+
+	<!-- Main part -->
 	<div class="header">
 		<div class="logo header__logo"><img class="logo__image" src="images/logo.svg"></div>
 		<nav class="nav header__nav">
 			<ul class="nav__jar">
-				<li class="nav__item"><a href="#about" class="nav__link">О компании</a></li>
 				<li class="nav__item"><a href="#brand" class="nav__link">Бренды</a></li>
+				<li class="nav__item"><a href="#about" class="nav__link">О компании</a></li>
 				<li class="nav__item"><a href="#dealer" class="nav__link">Стать дилером</a></li>
 				<li class="nav__item"><a href="#contact" class="nav__link">Контакты</a></li>
 			</ul>
@@ -37,12 +89,87 @@
 		</div>
 	</div>
 	<main>
+		<section id="brand">
+			<div class="partner">
+				<div class="partner__item">
+					<div class="partner__image image_grey"><img class="svg" src="images/brand-1.svg" alt="Zetton"></div>
+					<div class="partner__text">111Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
+					<input class="partner__cerf" type="hidden" value="files/adobe_reader_reference.pdf">
+				</div>
+				<div class="partner__item">
+					<div class="partner__image image_grey"><img class="svg" src="images/brand-2.svg" alt="COTEetCI"></div>
+					<div class="partner__text">222Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
+					<input class="partner__cerf" type="hidden" value="files/adobe_reader_reference.pdf">
+				</div>
+				<div class="partner__item">
+					<div class="partner__image image_grey"><img class="svg" src="images/brand-3.svg" alt="LDNIO"></div>
+					<div class="partner__text">333Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
+					<input class="partner__cerf" type="hidden" value="files/adobe_reader_reference.pdf">
+				</div>
+				<div class="partner__item">
+					<div class="partner__image image_grey"><img class="svg" src="images/brand-4.svg" alt="Remax"></div>
+					<div class="partner__text">444Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
+					<input class="partner__cerf" type="hidden" value="files/adobe_reader_reference.pdf">
+				</div>
+				<div class="partner__item">
+					<div class="partner__image image_grey"><img class="svg" src="images/brand-5.svg" alt="awei"></div>
+					<div class="partner__text">111Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
+					<input class="partner__cerf" type="hidden" value="files/adobe_reader_reference.pdf">
+				</div>
+				<div class="partner__item">
+					<div class="partner__image image_grey"><img class="svg" src="images/brand-6.svg" alt="hoco"></div>
+					<div class="partner__text">222Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
+					<input class="partner__cerf" type="hidden" value="files/adobe_reader_reference.pdf">
+				</div>
+				<div class="partner__item">
+					<div class="partner__image image_grey"><img class="svg" src="images/brand-7.svg" alt="Celebrat"></div>
+					<div class="partner__text">111Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
+					<input class="partner__cerf" type="hidden" value="files/adobe_reader_reference.pdf">
+				</div>
+				<div class="partner__item">
+					<div class="partner__image image_grey"><img class="svg" src="images/brand-8.svg" alt="Joyroom"></div>
+					<div class="partner__text">222Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
+					<input class="partner__cerf" type="hidden" value="files/adobe_reader_reference.pdf">
+				</div>
+				<div class="partner__item">
+					<div class="partner__image image_grey"><img class="svg" src="images/brand-9.svg" alt="inkax"></div>
+					<div class="partner__text">333Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
+					<input class="partner__cerf" type="hidden" value="files/adobe_reader_reference.pdf">
+				</div>
+				<div class="partner__item">
+					<div class="partner__image image_grey"><img class="svg" src="images/brand-10.svg" alt="Romix"></div>
+					<div class="partner__text">444Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
+					<input class="partner__cerf" type="hidden" value="files/adobe_reader_reference.pdf">
+				</div>
+				<div class="partner__item">
+					<div class="partner__image image_grey"><img class="svg" src="images/brand-11.svg" alt="Baseus"></div>
+					<div class="partner__text">111Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
+					<input class="partner__cerf" type="hidden" value="files/adobe_reader_reference.pdf">
+				</div>
+				<div class="partner__item">
+					<div class="partner__image image_grey"><img class="svg" src="images/brand-12.svg" alt="Yison"></div>
+					<div class="partner__text">222Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
+					<input class="partner__cerf" type="hidden" value="files/adobe_reader_reference.pdf">
+				</div>
+				<div class="popup">
+					<div class="popup__close"><img src="images/cross.svg" alt="Закрыть"></div>
+					<div class="popup__image"><img src="images/brand-1.svg"></div>
+					<div class="popup__jar">
+						<div class="popup__text"></div>
+						<div class="popup__buttons">
+							<a href="#dealer" class="popup__link">Получить прайс-лист</a>
+							<a href="#" class="popup__link link_cerf" target="_blank">Посмотреть сертификат</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<section id="about">
 			<div class="intro">
 				<p>Компания НеоИнТек существует на рынке аксессуаров уже более 10 лет и зарекомендовала себя как надежный крупный поставщик таких брендов как: Remax, WK, Zetton, LDNIO, HOCO, Baseus, AWEI, Yison, Celebrat, inkax, JOROOM, COTEetCI и др. Продукцию фирм, c которыми работает NeoIntek.ru, знают во всем мире и в России. Наверно нет такого человека, который не пользовался бы дополнительным аккумулятором или кабелем этих компаний, а ассортимент наушников порадует даже самого требовательного аудиофила. Сбалансированный портфель продукции известных и качественных производителей позволили NeoInTek создать одну из крупнейших дилерских сетей на рынке аксессуаров для мобильных телефонов на территории России. В отличии от большинства компаний на рынке, у нас есть собственное представительство в Китае, что позволяет нам контролировать качество отгружаемого товара, получать самые свежие новинки на рынке и искать уникальный товар по запросу заказчика. Однако останавливаться на достигнутом компания не собирается, постоянно аналзируя потребность для российских потребителей в новой высококачественной продукции. NeoInTek заинтересована в дальнейшем расширении дилерской сети и всегда рада предложить потенциальным дилерам максимально интересные условия работы.</p>
 			</div>
-			<div class="service">
-				<div class="topic service__topic">Мы предлагаем:</div>
+			<!-- <div class="service">
+				<div class="topic service__topic wow zoomIn" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="120">Мы предлагаем:</div>
 				<div class="offer service__offer">
 					<div class="offer__link">Юридическую чистоту сделок</div>
 					<div class="offer__link">Оперативные поставки</div>
@@ -52,9 +179,9 @@
 					<div class="offer__link">Гарантийное обслуживание</div>
 					<div class="offer__link">Предоставление образцов новой продукции</div>
 				</div>
-			</div>
+			</div> -->
 			<div class="advantage">
-				<div class="topic advantage__topic">Наши преимущества:</div>
+				<div class="topic advantage__topic wow zoomIn" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="120">Наши преимущества:</div>
 				<div class="advantage__jar">
 					<div class="advantage__item">
 						<div class="advantage__image"><img src="images/adv-1.svg" alt="Анализ"></div>
@@ -71,66 +198,9 @@
 				</div>
 			</div>
 		</section>
-		<section id="brand">
-			<div class="partner">
-				<div class="partner__item">
-					<div class="partner__image image_grey"><img class="svg" src="images/brand-1.svg" alt="Zetton"></div>
-					<div class="partner__text">111Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
-				</div>
-				<div class="partner__item">
-					<div class="partner__image image_grey"><img class="svg" src="images/brand-2.svg" alt="Zetton"></div>
-					<div class="partner__text">222Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
-				</div>
-				<div class="partner__item">
-					<div class="partner__image image_grey"><img class="svg" src="images/brand-3.svg" alt="Zetton"></div>
-					<div class="partner__text">333Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
-				</div>
-				<div class="partner__item">
-					<div class="partner__image image_grey"><img class="svg" src="images/brand-4.svg" alt="Zetton"></div>
-					<div class="partner__text">444Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
-				</div>
-				<div class="partner__item">
-					<div class="partner__image image_grey"><img class="svg" src="images/brand-5.svg" alt="Zetton"></div>
-					<div class="partner__text">111Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
-				</div>
-				<div class="partner__item">
-					<div class="partner__image image_grey"><img class="svg" src="images/brand-6.svg" alt="Zetton"></div>
-					<div class="partner__text">222Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
-				</div>
-				<div class="partner__item">
-					<div class="partner__image image_grey"><img class="svg" src="images/brand-7.svg" alt="Zetton"></div>
-					<div class="partner__text">111Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
-				</div>
-				<div class="partner__item">
-					<div class="partner__image image_grey"><img class="svg" src="images/brand-8.svg" alt="Zetton"></div>
-					<div class="partner__text">222Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
-				</div>
-				<div class="partner__item">
-					<div class="partner__image image_grey"><img class="svg" src="images/brand-9.svg" alt="Zetton"></div>
-					<div class="partner__text">333Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
-				</div>
-				<div class="partner__item">
-					<div class="partner__image image_grey"><img class="svg" src="images/brand-10.svg" alt="Zetton"></div>
-					<div class="partner__text">444Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
-				</div>
-				<div class="partner__item">
-					<div class="partner__image image_grey"><img class="svg" src="images/brand-11.svg" alt="Zetton"></div>
-					<div class="partner__text">111Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
-				</div>
-				<div class="partner__item">
-					<div class="partner__image image_grey"><img class="svg" src="images/brand-12.svg" alt="Zetton"></div>
-					<div class="partner__text">222Продукция Zetton известна своей швейцарской принципиальностью и надежностью. Следуя динамичным изменениям в мире мобильной электроники, мы производим высоко технологичные и универсальные аксессуары для мобильных устройств. Продукция Zetton имеет исключительно положительные оценки среди людей, которые предпочитают качественные вещи, улучшенный комфорт и ведут активный образ жизни.</div>
-				</div>
-				<div class="popup">
-					<div class="popup__close"><img src="images/cross.svg" alt="Закрыть"></div>
-					<div class="popup__image"><img src="images/brand-1.svg"></div>
-					<div class="popup__text"></div>
-				</div>
-			</div>
-		</section>
 		<section id="dealer">
 			<div class="dealer">
-				<div class="topic dealer__topic">Стать дилером</div>
+				<div class="topic dealer__topic wow zoomIn" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="120">Стать дилером</div>
 				<div class="dealer__jar">
 					<form class="form dealer__form">
 						<div class="form__jar">
@@ -168,37 +238,51 @@
 				<div id="map" class="map"></div>
 				<div class="contact__info">
 					<div class="topic contact__topic">Контакты</div>
-					<div class="contact__text">Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Одна вдали ведущими предупреждал приставка знаках меня однажды первую там!</div>
+					<div class="contact__text">115563, г. Москва, ул. Генерала Белова, д. 16, стр.4, офис 223
+						<a class="contact__link" href="tel:+74953158844">+7(495)315-88-44</a>
+						<a class="contact__link" href="tel:+74953158844">+7(495)315-88-44</a></div>
 				</div>
 			</div>
 		</section>
 	</main>
+	<div class="footer">
+		<div class="logo footer__logo"><img class="logo__image" src="images/logo.svg"></div>
+		<div class="footer__social">
+			<a href="#" class="footer__item">
+				<img src="images/vk.svg" alt="Вконтакте">
+			</a>
+			<a href="#" class="footer__item">
+				<img src="images/telegram.svg" alt="Telegram">
+			</a>
+			<a href="#" class="footer__item">
+				<img src="images/facebook.svg" alt="Facebook">
+			</a>
+		</div>
+	</div>
+
+	<!-- Fixed part -->
 	<div class="social">
 		<a href="#" class="social__item social_vk">
 			<img src="images/vk.svg" alt="Вконтакте">
 		</a>
-		<a href="#" class="social__item social_twitter">
-			<img src="images/twitter.svg" alt="Twitter">
+		<a href="#" class="social__item social_telegram">
+			<img src="images/telegram.svg" alt="Telegram">
 		</a>
 		<a href="#" class="social__item social_facebook">
 			<img src="images/facebook.svg" alt="Facebook">
 		</a>
 	</div>
-	<div class="scroll-to-top"><span class="icon icon_top_arrow"></span></div>
+	<div class="scroll-to-top"><span class="icon"><img src="images/scroll-up.svg"></span></div>
+
+	<!-- Scripts part -->
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script src="js/map.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script src="slick/slick.min.js"></script>
 	<script src="js/maskedinput.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
-	<script>
-		$(document).ready(function(){
-			$('.slider').slick({
-				arrows: false
-			});
-		});
-	</script>
 </body>
 </html>

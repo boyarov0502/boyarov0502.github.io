@@ -34,14 +34,16 @@ $(document).ready(function() {
 		var item  = $('div.partner__item'),
 				image = $('div.partner__image'),
 				text  = $('div.partner__text'),
+				cerf 	= $('input.partner__cerf'),
 				popup = $('div.popup'),
 				close = $('div.popup__close');
 
 		item.each(function(index) {
 			$(this).children(image).click(function() {
 				popup.fadeIn(300);
-				popup.children('.popup__image').html( image.eq(index).html() );
-				popup.children('.popup__text').text( text.eq(index).text() );
+				popup.find('.popup__image').html( image.eq(index).html() );
+				popup.find('.popup__text').text( text.eq(index).text() );
+				popup.find('.popup__link.link_cerf').attr( 'href', cerf.eq(index).val() );
 			})
 		});
 
@@ -65,7 +67,7 @@ $(document).ready(function() {
 	}
 
 	function scrollSmooth() {
-		$('nav a[href*=#], .slider a[href*=#]').bind('click', function(e) {
+		$('nav a[href*=#], .slider a[href*=#], .popup__link[href=#dealer]').bind('click', function(e) {
 			e.preventDefault();
 
 			var target = $(this).attr("href");
@@ -212,10 +214,27 @@ $(document).ready(function() {
 
 	function creatCustomScroll() {
 		$('html').niceScroll({
-			cursorcolor:"#888",
-			cursorwidth:"8px",
+			cursorborder:"0",
+			cursorborderradius:"1px",
+			cursorcolor:"#FF6600",
+			cursorwidth:"10px",
+			scrollspeed:"100",
 			zindex:"99999"
 		});
+	}
+
+	function creatSlider() {
+		$('.slider').slick({
+			arrows: false
+		});
+	}
+
+	function hidePreloader() {
+		$('.preloader').fadeOut('slow');
+	}
+
+	function initWow() {
+		new WOW().init();
 	}
 
 	loadSvg();
@@ -229,4 +248,8 @@ $(document).ready(function() {
 	addMask();
 	creatCheckbox();
 	creatCustomScroll();
+	creatSlider();
+	initWow();
+	$("html").getNiceScroll().resize();
+	$(window).on("load", hidePreloader);
 })

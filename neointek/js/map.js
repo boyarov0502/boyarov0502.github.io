@@ -4,14 +4,14 @@ var myMap,
 
 function init(){
     myMap = new ymaps.Map("map", {
-        center: [59.90577528, 30.48714974],
+        center: [55.61352599, 37.72574151],
         zoom: 16,
 				controls: ['smallMapDefaultSet'],
 				type: 'yandex#hybrid'
     });
 
-    myPlacemark = new ymaps.Placemark([59.90559206, 30.47991850], {
-        hintContent: 'г. Санкт-Петербург, ул. Дыбенко 27 к1'
+    myPlacemark = new ymaps.Placemark([55.61357457, 37.71915400], {
+        hintContent: 'г. Москва, ул. Генерала Белова, д. 16, стр.4, офис 223'
     }, {
         iconLayout: 'default#image',
         iconImageHref: 'images/market.svg',
@@ -34,6 +34,8 @@ function init(){
     })
 
 		myMap.geoObjects.add(myPlacemark);
+
+		myMap.hint.open(myMap.getCenter());
 
 		myMap.behaviors.disable('scrollZoom');
 }
