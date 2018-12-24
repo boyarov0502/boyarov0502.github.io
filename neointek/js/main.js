@@ -218,7 +218,7 @@ $(document).ready(function() {
 			cursorborderradius:"1px",
 			cursorcolor:"#FF6600",
 			cursorwidth:"10px",
-			scrollspeed:"100",
+			scrollspeed:"120",
 			zindex:"99999"
 		});
 	}
