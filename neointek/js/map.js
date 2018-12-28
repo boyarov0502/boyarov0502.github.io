@@ -1,10 +1,24 @@
 ymaps.ready(init);
 var myMap,
-    myPlacemark;
+		myPlacemark,
+		mediaCenter;
+
+if ($(window).width() <= 723) {
+	mediaCenter = [55.61357457, 37.71915400];
+}
+else if ($(window).width() <= 829) {
+	mediaCenter = [55.61357457, 37.72343259];
+}
+else if ($(window).width() <= 1035) {
+	mediaCenter = [55.61357457, 37.72443259];
+}
+else {
+	mediaCenter = [55.61352599, 37.72574151];
+}
 
 function init(){
     myMap = new ymaps.Map("map", {
-        center: [55.61352599, 37.72574151],
+        center: mediaCenter,
         zoom: 16,
 				controls: ['smallMapDefaultSet']
 				// type: 'yandex#hybrid'
@@ -39,3 +53,18 @@ function init(){
 
 		myMap.behaviors.disable('scrollZoom');
 }
+
+$(window).resize(function () {
+	if ($(window).width() <= 740) {
+		myMap.setCenter([55.61357457, 37.71915400]);
+	}
+	else if ($(window).width() <= 846) {
+		myMap.setCenter([55.61357457, 37.72343259]);
+	}
+	else if ($(window).width() <= 1052) {
+		myMap.setCenter([55.61357457, 37.72443259]);
+	}
+	else {
+		myMap.setCenter([55.61352599, 37.72574151]);
+	}
+});

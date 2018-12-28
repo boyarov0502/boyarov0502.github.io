@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90.38" height="91" viewBox="0 0 90.38 91">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #666;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <title>Китай</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Layer_1" data-name="Layer 1">
+      <g>
+        <line class="cls-1" x1="24.6" y1="0.5" x2="0.5" y2="90.5"/>
+        <polyline class="cls-1" points="22.52 8.26 89.88 8.26 77.5 54.48 10.15 54.48"/>
+        <polygon class="cls-1" points="32.8 15.78 32.8 20.6 37.86 20.6 32.8 23.58 32.8 28.4 29.66 25.42 24.6 28.4 27.73 23.58 24.6 20.6 29.66 20.6 32.8 15.78"/>
+        <g>
+          <line class="cls-1" x1="42.21" y1="13.77" x2="44.29" y2="16.86"/>
+          <line class="cls-1" x1="41.21" y1="16.86" x2="45.3" y2="13.77"/>
+        </g>
+        <g>
+          <line class="cls-1" x1="43.72" y1="18.91" x2="45.8" y2="22"/>
+          <line class="cls-1" x1="42.72" y1="22" x2="46.81" y2="18.91"/>
+        </g>
+        <g>
+          <line class="cls-1" x1="42.28" y1="23.97" x2="44.36" y2="27.06"/>
+          <line class="cls-1" x1="41.27" y1="27.06" x2="45.36" y2="23.97"/>
+        </g>
+        <g>
+          <line class="cls-1" x1="38.19" y1="29.08" x2="40.27" y2="32.16"/>
+          <line class="cls-1" x1="37.18" y1="32.16" x2="41.27" y2="29.08"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

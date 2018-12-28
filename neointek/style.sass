@@ -2,13 +2,19 @@
 @import url('fonts/fonts.css')
 @import url('fonts/icons.css')
 
+.container
+	margin: 0 auto
+	max-width: 1370px
+	padding: 0 60px
+	width: 100%
+
 .header
 	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15)
 	background: #FFFFFF
 	height: 60px
 	position: fixed
 	top: 0
-	transition: top 800ms
+	transition: top 600ms
 	width: 100%
 	z-index: 10
 	&__logo
@@ -20,6 +26,8 @@
 		width: 400px
 	&__nav
 		float: left
+	&__menu
+		display: none
 
 .logo
 	&__image
@@ -36,7 +44,7 @@
 	&__link
 		color: #000000
 		display: block
-		margin: 0 52px
+		margin: 0 50px
 		padding: 20px
 		text-decoration: none
 		transition: background 200ms, color 200ms
@@ -46,34 +54,59 @@
 		&.current
 			background: #FF5B00
 			color: #FFFFFF
+	&__close
+		display: none
 
 .slider
 	&__slide
-		background: url('images/background.png') repeat
+		background-position: center
+		background-size: cover
+		position: relative
 		text-align: center
+		&:after
+			background: url('images/background.png') repeat
+			content: " "
+			height: 100%
+			left: 0
+			position: absolute
+			top: 0
+			width: 100%
 	&__text
 		color: #FFFFFF
 		font-family: "PlexSans"
 		font-size: 96px
-		letter-spacing: 50px
+		letter-spacing: 0.5em
 		margin: 160px auto 0
+		position: relative
 		text-transform: uppercase
+		z-index: 1
 	&__link
 		background: #FF5B00
 		border-radius: 16px
 		color: #FFFFFF
-		display: table
+		display: inline-block
 		font-size: 24px
-		margin: 82px auto 88px
-		padding: 2px 144px 8px
+		line-height: 30px
+		margin: 82px 15px 88px
+		padding: 0.1em 2em 0.33em
+		position: relative
 		text-decoration: none
+		transition: background 300ms
+		width: 380px
+		z-index: 1
 		&:hover
-			opacity: 0.75
+			background: #999999
+
+.link
+	&_grey
+		background: #999999
+		&:hover
+			background: #FF5B00
 
 .intro
 	margin: 0 auto 84px
+	max-width: 1060px
 	padding: 84px 0 0
-	width: 1060px
 
 // .service
 // 	border-bottom: 1px solid #FF5B00
@@ -115,17 +148,20 @@
 	padding-top: 66px
 	text-align: center
 	&__jar
-		margin: 77px auto 120px
+		display: table
+		margin: 77px auto 70px
+		max-width: 1090px
 		text-align: center
-		width: 1090px
+		width: 100%
 	&__item
-		display: inline-block
-		width: 250px
-		&:first-child
+		display: inline
+		float: left
+		margin-bottom: 50px
+		min-height: 167px
+		width: 33%
+		&:nth-child(3n+1)
 			text-align: left
-		&:nth-child(2)
-			margin: 0 165px
-		&:last-child
+		&:nth-child(3n+3)
 			text-align: right
 	&__image
 		margin-bottom: 16px
@@ -141,7 +177,6 @@
 	padding-top: 59px
 	position: relative
 	text-align: center
-	width: 1250px
 	&__item
 		display: inline-block
 		float: none
@@ -158,7 +193,7 @@
 		display: none
 
 .popup
-	background: rgba(0, 0, 0, 0.7)
+	background: rgba(76, 76, 76, 0.9)
 	display: none
 	height: 89.5%
 	height: calc(100% - 60px)
@@ -179,14 +214,14 @@
 		display: table
 		float: left
 		height: 100%
-		padding: 40px 40px 0 0
+		padding: 3.2% 3.2% 0 0
 		text-align: right
 		width: 26.4%
 		svg
 			height: auto
 			max-height: 75px
 			min-height: 34px
-			width: 230px
+			width: 80%
 			*
 				fill: #ffffff
 	&__jar
@@ -194,7 +229,7 @@
 		float: left
 		font-size: 20px
 		height: 100%
-		padding: 60px 40px 40px 40px
+		padding: 4.8% 40px 3.2% 3.2%
 		position: relative
 		text-align: left
 		width: 73.6%
@@ -218,9 +253,9 @@
 			color: rgba(0, 0, 0, 0.7)
 
 .dealer
-	margin: 0 auto 130px
-	padding-top: 50px
-	width: 786px
+	margin: 0 auto 120px
+	max-width: 786px
+	padding-top: 60px
 	&__topic
 		margin-bottom: 12px
 	&__jar
@@ -248,7 +283,6 @@
 		color: #000000
 		font-size: 14px
 		padding: 2px 6px 10px
-		text-decoration: underline
 	&__input
 		border: 1px solid #ffffff
 		color: #000000
@@ -362,11 +396,10 @@
 	padding: 0 6px
 
 .contact
-	padding-top: 60px
 	position: relative
 	width: 100%
 	&__info
-		background: #666666
+		background: rgba(102, 102, 102, 0.95)
 		color: #ffffff
 		height: 350px
 		left: 540px
@@ -376,6 +409,7 @@
 		right: 0
 		top: 110px
 		width: 400px
+		z-index: 1
 	&__topic
 		color: #ffffff
 		margin-bottom: 16px
@@ -423,11 +457,11 @@
 			opacity: 1
 
 .social
-	height: 180px
+	height: 150px
 	left: 0
 	position: fixed
-	top: 30%
-	width: 60px
+	top: 26%
+	width: 50px
 	z-index: 99
 	&__item
 		display: block
@@ -450,6 +484,7 @@
 	bottom: 105px
 	right: 100px
 	display: none
+	z-index: 1
 	span
 		background: #F77A2A
 		cursor: pointer
@@ -536,3 +571,277 @@
     animation: unset !important
     -webkit-transition: none !important
     transition: none !important
+
+
+@media screen and (max-width: 1550px)
+	.slider
+		&__text
+			font-size: 80px
+
+@media screen and (max-width: 1370px)
+	.header
+		&__logo
+			width: 380px
+	.nav
+		&__link
+			margin: 0 33px
+	.slider
+		&__text
+			font-size: 72px
+	.footer
+		&__logo
+			width: 380px
+
+@media screen and (max-width: 1274px)
+	.popup
+		left: 0
+		margin: auto
+		right: 0
+		width: 100%
+
+@media screen and (max-width: 1214px)
+	.header
+		&__logo
+			width: 330px
+	.slider
+		&__text
+			font-size: 60px
+		&__link
+			font-size: 20px
+	.footer
+		&__logo
+			width: 330px
+
+@media screen and (max-width: 1164px)
+	.header
+		background: #333333
+		&__menu
+			cursor: pointer
+			display: inline-block
+			float: right
+			margin: 20px 45px 20px 0
+	.nav
+		background: #FF5B00
+		position: absolute
+		right: -242px
+		top: 60px
+		transition: right 300ms
+		&.show
+			right: 0
+		&__item
+			float: none
+		&__close
+			color: #ffffff
+			cursor: pointer
+			display: block
+			position: absolute
+			right: 20px
+			top: 10px
+	.partner
+		&__item
+			margin: 42px 8%
+
+@media screen and (max-width: 1052px)
+	.slider
+		&__text
+			font-size: 50px
+	.contact
+		&__info
+			left: 390px
+	.popup
+		height: auto
+		max-height: none
+		padding-bottom: 40px
+		&__image
+			float: none
+			height: auto
+			padding: 25px 0 0 0
+			width: 100%
+			svg
+				display: block
+				padding: 0 25px
+				width: 45%
+		&__jar
+			float: none
+			font-size: 18px
+			height: auto
+			padding: 40px 25px
+			width: 100%
+		&__link
+			font-size: 16px
+		&__buttons
+			bottom: 0
+			padding: 0 25px
+			position: relative
+			right: 0
+			text-align: left
+
+@media screen and (max-width: 846px)
+	.container
+		padding: 0 30px
+	.slider
+		&__text
+			font-size: 40px
+		&__link
+			font-size: 18px
+			width: 286px
+	.contact
+		&__info
+			width: 40%
+	.social
+		left: -40px
+		transition: left 300ms
+		&:hover
+			left: 0
+	.scroll-to-top
+		bottom: 75px
+		right: 50px
+		span
+			height: 40px
+			line-height: 34px
+			width: 40px
+			img
+				width: 28px
+
+@media screen and (max-width: 740px)
+	.slider
+		&__text
+			letter-spacing: 0.25em
+		&__link
+			font-size: 16px
+			width: 250px
+	.advantage
+		&__text
+			font-size: 14px
+	.contact
+		&__info
+			height: auto
+			left: 0
+			padding-bottom: 45px
+			position: relative
+			top: 0
+			width: 100%
+
+@media screen and (max-width: 650px)
+	.dealer
+		&__form
+			width: 100%
+	.form
+		&__column
+			width: 100%
+		&__input
+			margin: 10px 0
+			width: 100%
+		&__textarea
+			height: 150px
+			margin: 10px 0
+			max-height: 202px
+			max-width: 100%
+			min-height: 150px
+			min-width: 100%
+			width: 100%
+	.switcher_checkbox
+		display: block
+
+@media screen and (max-width: 580px)
+	.slider
+		&__text
+			margin: 120px auto 0
+		&__link
+			display: block
+			margin: 20px auto
+			&:nth-child(2)
+				margin-top: 65px
+			&:last-child
+				margin-bottom: 65px
+	.topic
+		font-size: 40px
+	.partner
+		padding-top: 40px
+	.advantage
+		&__jar
+			margin: 77px auto 10px
+		&__item
+			width: 50%
+			&:nth-child(3n+1)
+				text-align: center
+			&:nth-child(3n+3)
+				text-align: center
+	.dealer
+		padding-top: 50px
+
+@media screen and (max-width: 550px)
+	.header
+		&__logo
+			width: 294px
+		&__menu
+			margin: 20px 34px 20px 0
+	.slider
+		&__text
+			font-size: 34px
+			letter-spacing: 0.15em
+		&__link
+			font-size: 16px
+	.popup
+		&__link
+			display: block
+			margin: 5px 0
+	.footer
+		&__logo
+			width: 294px
+		&__social
+			float: right
+			padding-right: 34px
+
+@media screen and (max-width: 483px)
+	.partner
+		&__item
+			margin: 30px 8%
+
+@media screen and (max-width: 450px)
+	.header
+		height: 40px
+		&__logo
+			padding: 4px 34px
+			text-align: left
+			width: auto
+		&__menu
+			margin: 8px 34px 8px 0
+	.logo
+		&__image
+			width: 180px
+	.nav
+		top: 40px
+	.footer
+		&__logo
+			text-align: left
+			width: auto
+	.scroll-to-top
+		right: 30px
+	.switcher_checkbox
+		margin-bottom: 15px
+
+@media screen and (max-width: 400px)
+	.container
+		padding: 0 15px
+	.slider
+		&__text
+			font-size: 30px
+			letter-spacing: normal
+		&__link
+			padding: 0.1em 2em 0.33em
+	.topic
+		font-size: 34px
+	.popup
+		&__image
+			svg
+				width: 70%
+	.advantage
+		&__item
+			width: 100%
+	.footer
+		&__logo
+			text-align: center
+			width: 100%
+		&__social
+			display: none
