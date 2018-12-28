@@ -58,12 +58,14 @@
 		display: none
 
 .slider
+	margin-top: 50px
 	&__slide
 		background-position: center
 		background-size: cover
+		height: 487px !important
 		position: relative
 		text-align: center
-		&:after
+		&:before
 			background: url('images/background.png') repeat
 			content: " "
 			height: 100%
@@ -71,15 +73,25 @@
 			position: absolute
 			top: 0
 			width: 100%
+	&__jar
+		position: relative
+		top: 50%
+		-webkit-transform: translateY(-50%)
+		-ms-transform: translateY(-50%)
+		transform: translateY(-50%)
 	&__text
 		color: #FFFFFF
 		font-family: "PlexSans"
-		font-size: 96px
-		letter-spacing: 0.5em
-		margin: 160px auto 0
+		margin: auto
+		padding: 0 60px
 		position: relative
-		text-transform: uppercase
 		z-index: 1
+		h2
+			font-size: 48px
+			font-weight: 400
+			margin-top: 0
+		br
+			display: none
 	&__link
 		background: #FF5B00
 		border-radius: 16px
@@ -87,7 +99,7 @@
 		display: inline-block
 		font-size: 24px
 		line-height: 30px
-		margin: 82px 15px 88px
+		margin: 82px 15px 0
 		padding: 0.1em 2em 0.33em
 		position: relative
 		text-decoration: none
@@ -240,17 +252,19 @@
 	&__link
 		border: 1px solid #ffffff
 		color: #ffffff
-		display: inline-block
+		display: block
+		float: left
 		font-size: 18px
+		height: 44.34px
 		margin-left: 16px
 		padding: 0.553em 0.541em 0.633em
 		text-decoration: none
 		transition: background 200ms, color 200ms
+		width: 250px
 		&:first-child
 			margin-left: 0
 		&:hover
-			background: #ffffff
-			color: rgba(0, 0, 0, 0.7)
+			border-width: 2px
 
 .dealer
 	margin: 0 auto 120px
@@ -468,10 +482,11 @@
 		height: 50px
 		line-height: 50px
 		text-align: center
-		transition: opacity 200ms
+		transition: all 0.3s ease-out
 		width: 50px
 		&:hover
-			opacity: 0.7
+			transform: scale(1.2, 1.2)
+			transform-origin: left center
 	&_vk
 		background: #F77A2A
 	&_telegram
@@ -572,12 +587,6 @@
     -webkit-transition: none !important
     transition: none !important
 
-
-@media screen and (max-width: 1550px)
-	.slider
-		&__text
-			font-size: 80px
-
 @media screen and (max-width: 1370px)
 	.header
 		&__logo
@@ -585,9 +594,6 @@
 	.nav
 		&__link
 			margin: 0 33px
-	.slider
-		&__text
-			font-size: 72px
 	.footer
 		&__logo
 			width: 380px
@@ -604,8 +610,6 @@
 		&__logo
 			width: 330px
 	.slider
-		&__text
-			font-size: 60px
 		&__link
 			font-size: 20px
 	.footer
@@ -613,6 +617,16 @@
 			width: 330px
 
 @media screen and (max-width: 1164px)
+	.slider
+		&__slide
+			height: 417px !important
+		&__text
+			h2
+				font-size: 36px
+			br
+				display: block
+		&__link
+			margin: 59px 15px 0
 	.header
 		background: #333333
 		&__menu
@@ -642,9 +656,6 @@
 			margin: 42px 8%
 
 @media screen and (max-width: 1052px)
-	.slider
-		&__text
-			font-size: 50px
 	.contact
 		&__info
 			left: 390px
@@ -680,11 +691,16 @@
 	.container
 		padding: 0 30px
 	.slider
+		&__slide
+			height: 350px !important
 		&__text
-			font-size: 40px
+			padding: 0 15px
+			h2
+				font-size: 30px
 		&__link
-			font-size: 18px
-			width: 286px
+			font-size: 16px
+			margin: 45px 15px 0
+			width: 260px
 	.contact
 		&__info
 			width: 40%
@@ -705,8 +721,8 @@
 
 @media screen and (max-width: 740px)
 	.slider
-		&__text
-			letter-spacing: 0.25em
+		&__slide
+			height: 290px !important
 		&__link
 			font-size: 16px
 			width: 250px
@@ -745,15 +761,22 @@
 
 @media screen and (max-width: 580px)
 	.slider
+		margin-top: 60px
+		&__slide
+			background-size: 870px auto
+			height: 219px !important
 		&__text
-			margin: 120px auto 0
+			h2
+				font-size: 21px
+			p
+				font-size: 14px
 		&__link
 			display: block
-			margin: 20px auto
+			font-size: 14px
+			margin: 10px auto 0
+			width: 240px
 			&:nth-child(2)
-				margin-top: 65px
-			&:last-child
-				margin-bottom: 65px
+				margin-top: 20px
 	.topic
 		font-size: 40px
 	.partner
@@ -776,12 +799,6 @@
 			width: 294px
 		&__menu
 			margin: 20px 34px 20px 0
-	.slider
-		&__text
-			font-size: 34px
-			letter-spacing: 0.15em
-		&__link
-			font-size: 16px
 	.popup
 		&__link
 			display: block
@@ -812,6 +829,13 @@
 			width: 180px
 	.nav
 		top: 40px
+	.slider
+		margin-top: 40px
+		&__slide
+			background-color: #888888
+			background-repeat: no-repeat
+			background-size: 630px auto
+			height: 250px !important
 	.footer
 		&__logo
 			text-align: left
@@ -825,9 +849,9 @@
 	.container
 		padding: 0 15px
 	.slider
-		&__text
-			font-size: 30px
-			letter-spacing: normal
+		// &__text
+		// 	font-size: 30px
+		// 	letter-spacing: normal
 		&__link
 			padding: 0.1em 2em 0.33em
 	.topic
