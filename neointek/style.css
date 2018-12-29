@@ -646,6 +646,14 @@ body {
   vertical-align: sub;
 }
 
+.switcher_checkbox a {
+  color: #ffffff;
+}
+
+.switcher_checkbox a:hover {
+  text-decoration: none;
+}
+
 .switcher_checkbox input[type="checkbox"] {
   display: contents;
   float: left;
@@ -1238,8 +1246,12 @@ body {
   }
   .slider__slide {
     background-color: #888888;
-    background-image: none !important;
+    background-repeat: no-repeat;
+    background-size: 625px auto;
     height: 290px !important;
+  }
+  .slider__slide_cover {
+    background-size: cover;
   }
   .slider__text h2 {
     font-size: 1.5em;

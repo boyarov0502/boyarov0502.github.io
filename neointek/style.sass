@@ -371,6 +371,10 @@
     vertical-align: sub
 		color: #ffffff
 		font-size: 12px
+		a
+			color: #ffffff
+			&:hover
+				text-decoration: none
   input[type="checkbox"]
     display: contents   // --- убрать если нет текста
     float: left   // --- убрать если нет текста
@@ -833,8 +837,11 @@
 		margin-top: 40px
 		&__slide
 			background-color: #888888
-			background-image: none !important
+			background-repeat: no-repeat
+			background-size: 625px auto
 			height: 290px !important
+			&_cover
+				background-size: cover
 		&__text
 			h2
 				font-size: 1.5em
