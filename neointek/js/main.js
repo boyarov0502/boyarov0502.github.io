@@ -132,10 +132,7 @@ $(document).ready(function() {
 				field: "required",
 				subject: "required",
 				city: "required",
-				message: {
-					required: true,
-					minlength: 10
-				},
+				message: "required",
 				checkbox: "required"
 			},
 			messages: {
@@ -144,10 +141,7 @@ $(document).ready(function() {
 				year: " ",
 				phone: " ",
 				site: " ",
-				email: {
-					required: " ",
-					email: "Введите правильный email"
-				},
+				email: " ",
 				field: " ",
 				subject: " ",
 				city: " ",
