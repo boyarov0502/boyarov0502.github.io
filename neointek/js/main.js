@@ -227,7 +227,8 @@ $(document).ready(function() {
 
 	function creatSlider() {
 		$('.slider').slick({
-			arrows: false
+			arrows: false,
+			autoplay: true
 		});
 	}
 
