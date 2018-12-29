@@ -49,8 +49,6 @@ function init(){
 
 		myMap.geoObjects.add(myPlacemark);
 
-		myMap.hint.open(myMap.getCenter());
-
 		myMap.behaviors.disable('scrollZoom');
 }
 
