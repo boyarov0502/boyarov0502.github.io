@@ -270,7 +270,7 @@ body {
 
 .slider__text {
   color: #FFFFFF;
-  font-family: "PlexSans";
+  font-size: 24px;
   margin: auto;
   padding: 0 60px;
   position: relative;
@@ -278,17 +278,18 @@ body {
 }
 
 .slider__text h2 {
-  font-size: 48px;
+  font-size: 1.3em;
   font-weight: 400;
   margin-top: 0;
 }
 
-.slider__text br {
-  display: none;
+.slider__text p {
+  display: block;
+  margin: 0 auto;
+  width: 700px;
 }
 
 .slider__link {
-  background: #FF5B00;
   border-radius: 16px;
   color: #FFFFFF;
   display: inline-block;
@@ -303,15 +304,19 @@ body {
   z-index: 1;
 }
 
-.slider__link:hover {
+.link_second {
   background: #999999;
+}
+
+.link_first {
+  background: #FF5B00;
 }
 
 .link_grey {
   background: #999999;
 }
 
-.link_grey:hover {
+.link_orange {
   background: #FF5B00;
 }
 
@@ -502,6 +507,7 @@ body {
 
 .popup__link:hover {
   border-width: 2px;
+  background: #FF5B00;
 }
 
 .dealer {
@@ -973,14 +979,13 @@ body {
   .slider__slide {
     height: 417px !important;
   }
-  .slider__text h2 {
-    font-size: 36px;
-  }
-  .slider__text br {
-    display: block;
+  .slider__text p {
+    width: 636px;
   }
   .slider__link {
+    font-size: 18px;
     margin: 59px 15px 0;
+    width: 330px;
   }
   .header {
     background: #333333;
@@ -1064,15 +1069,16 @@ body {
     height: 350px !important;
   }
   .slider__text {
+    font-size: 14px;
     padding: 0 15px;
   }
-  .slider__text h2 {
-    font-size: 30px;
+  .slider__text p {
+    width: 376px;
   }
   .slider__link {
-    font-size: 16px;
-    margin: 45px 15px 0;
-    width: 260px;
+    font-size: 14px;
+    margin: 35px 15px 0;
+    width: 220px;
   }
   .contact__info {
     width: 40%;
@@ -1101,10 +1107,6 @@ body {
 @media screen and (max-width: 740px) {
   .slider__slide {
     height: 290px !important;
-  }
-  .slider__link {
-    font-size: 16px;
-    width: 250px;
   }
   .advantage__text {
     font-size: 14px;
@@ -1151,9 +1153,6 @@ body {
   .slider__slide {
     background-size: 870px auto;
     height: 219px !important;
-  }
-  .slider__text h2 {
-    font-size: 21px;
   }
   .slider__text p {
     font-size: 14px;
@@ -1239,9 +1238,14 @@ body {
   }
   .slider__slide {
     background-color: #888888;
-    background-repeat: no-repeat;
-    background-size: 630px auto;
-    height: 250px !important;
+    background-image: none !important;
+    height: 290px !important;
+  }
+  .slider__text h2 {
+    font-size: 1.5em;
+  }
+  .slider__text p {
+    width: 290px;
   }
   .footer__logo {
     text-align: left;

@@ -81,19 +81,20 @@
 		transform: translateY(-50%)
 	&__text
 		color: #FFFFFF
-		font-family: "PlexSans"
+		font-size: 24px
 		margin: auto
 		padding: 0 60px
 		position: relative
 		z-index: 1
 		h2
-			font-size: 48px
+			font-size: 1.3em
 			font-weight: 400
 			margin-top: 0
-		br
-			display: none
+		p
+			display: block
+			margin: 0 auto
+			width: 700px
 	&__link
-		background: #FF5B00
 		border-radius: 16px
 		color: #FFFFFF
 		display: inline-block
@@ -106,14 +107,16 @@
 		transition: background 300ms
 		width: 380px
 		z-index: 1
-		&:hover
-			background: #999999
 
 .link
+	&_second
+		background: #999999
+	&_first
+		background: #FF5B00
 	&_grey
 		background: #999999
-		&:hover
-			background: #FF5B00
+	&_orange
+		background: #FF5B00
 
 .intro
 	margin: 0 auto 84px
@@ -265,6 +268,7 @@
 			margin-left: 0
 		&:hover
 			border-width: 2px
+			background: #FF5B00
 
 .dealer
 	margin: 0 auto 120px
@@ -621,12 +625,12 @@
 		&__slide
 			height: 417px !important
 		&__text
-			h2
-				font-size: 36px
-			br
-				display: block
+			p
+				width: 636px
 		&__link
+			font-size: 18px
 			margin: 59px 15px 0
+			width: 330px
 	.header
 		background: #333333
 		&__menu
@@ -694,13 +698,14 @@
 		&__slide
 			height: 350px !important
 		&__text
+			font-size: 14px
 			padding: 0 15px
-			h2
-				font-size: 30px
+			p
+				width: 376px
 		&__link
-			font-size: 16px
-			margin: 45px 15px 0
-			width: 260px
+			font-size: 14px
+			margin: 35px 15px 0
+			width: 220px
 	.contact
 		&__info
 			width: 40%
@@ -723,9 +728,6 @@
 	.slider
 		&__slide
 			height: 290px !important
-		&__link
-			font-size: 16px
-			width: 250px
 	.advantage
 		&__text
 			font-size: 14px
@@ -766,8 +768,6 @@
 			background-size: 870px auto
 			height: 219px !important
 		&__text
-			h2
-				font-size: 21px
 			p
 				font-size: 14px
 		&__link
@@ -833,9 +833,13 @@
 		margin-top: 40px
 		&__slide
 			background-color: #888888
-			background-repeat: no-repeat
-			background-size: 630px auto
-			height: 250px !important
+			background-image: none !important
+			height: 290px !important
+		&__text
+			h2
+				font-size: 1.5em
+			p
+				width: 290px
 	.footer
 		&__logo
 			text-align: left
@@ -849,9 +853,6 @@
 	.container
 		padding: 0 15px
 	.slider
-		// &__text
-		// 	font-size: 30px
-		// 	letter-spacing: normal
 		&__link
 			padding: 0.1em 2em 0.33em
 	.topic
