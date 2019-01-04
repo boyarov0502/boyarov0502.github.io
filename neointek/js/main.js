@@ -42,7 +42,7 @@ $(document).ready(function() {
 			$(this).children(image).click(function() {
 				popup.fadeIn(300);
 				popup.find('.popup__image').html( image.eq(index).html() );
-				popup.find('.popup__text').text( text.eq(index).text() );
+				popup.find('.popup__text').html( text.eq(index).html() );
 				popup.find('.popup__link.link_cerf').attr( 'href', cerf.eq(index).val() );
 				$('html, body').stop().animate({ scrollTop: $(popup).offset().top - 60 }, 600);
 			})
@@ -68,7 +68,7 @@ $(document).ready(function() {
 	}
 
 	function scrollSmooth() {
-		$('nav a[href*=#], .slider a[href*=#], .popup__link[href=#dealer]').bind('click', function(e) {
+		$('nav a[href*=#], .slider a[href*=#], .popup__link[href=#dealer], .intro__link').bind('click', function(e) {
 			e.preventDefault();
 
 			var target = $(this).attr("href");

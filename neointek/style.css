@@ -326,6 +326,30 @@ body {
   padding: 84px 0 0;
 }
 
+.intro__topic {
+  margin-bottom: 36px;
+}
+
+.intro__link {
+  background: #FF5B00;
+  border-radius: 16px;
+  color: #ffffff;
+  display: block;
+  font-size: 22px;
+  line-height: 30px;
+  margin: 48px auto 0;
+  max-width: 380px;
+  padding: 0.1em 2em 0.33em;
+  text-align: center;
+  text-decoration: none;
+  transition: background 300ms;
+  width: 100%;
+}
+
+.intro__link:hover {
+  background: #d44c00;
+}
+
 .topic {
   color: #333333;
   font-family: "PlexSans";
@@ -431,8 +455,9 @@ body {
 .popup {
   background: rgba(76, 76, 76, 0.9);
   display: none;
-  height: 89.5%;
-  height: calc(100% - 60px);
+  height: auto;
+  min-height: 89.5%;
+  min-height: calc(100% - 60px);
   padding: 0;
   position: absolute;
   top: 60px;
@@ -475,7 +500,7 @@ body {
   float: left;
   font-size: 20px;
   height: 100%;
-  padding: 4.8% 40px 3.2% 3.2%;
+  padding: 4.8% 40px 116px 3.2%;
   position: relative;
   text-align: left;
   width: 64.7%;
