@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.722cb399.chunk.css",
+    "main.js": "/static/js/main.cb4bbca1.chunk.js",
+    "main.js.map": "/static/js/main.cb4bbca1.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.0c481971.js",
+    "runtime~main.js.map": "/static/js/runtime~main.0c481971.js.map",
+    "static/js/2.d6dd2b39.chunk.js": "/static/js/2.d6dd2b39.chunk.js",
+    "static/js/2.d6dd2b39.chunk.js.map": "/static/js/2.d6dd2b39.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.2c1f3dc40e277f5ee955bf6d4a2bb707.js": "/precache-manifest.2c1f3dc40e277f5ee955bf6d4a2bb707.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.722cb399.chunk.css.map": "/static/css/main.722cb399.chunk.css.map",
+    "static/media/Ban.jpg": "/static/media/Ban.b497e24c.jpg",
+    "static/media/Mining.png": "/static/media/Mining.c847e5f7.png"
+  }
+}
